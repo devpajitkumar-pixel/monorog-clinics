@@ -10,19 +10,14 @@ export function ConceptDisclaimerModal() {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    // Check if the user has already acknowledged the demonstration notice in this session
-    const hasAcknowledged = sessionStorage.getItem("manorog_demo_acknowledged");
-    if (!hasAcknowledged) {
-      // Show modal on first load with a brief delay for smooth appearance
-      const timer = setTimeout(() => {
-        setIsOpen(true);
-      }, 500);
-      return () => clearTimeout(timer);
-    }
+    // Open modal on every landing and refresh
+    const timer = setTimeout(() => {
+      setIsOpen(true);
+    }, 200);
+    return () => clearTimeout(timer);
   }, []);
 
   const handleAcknowledge = () => {
-    sessionStorage.setItem("manorog_demo_acknowledged", "true");
     setIsOpen(false);
   };
 
