@@ -171,17 +171,26 @@ export function AppointmentSection() {
             {/* Direct Telephone Fallback */}
             <div className="p-4 rounded-xl bg-slate-100/80 border border-slate-200">
               <p className="text-xs text-slate-600">
-                Prefer to book over a quick phone call? Call our reception desk directly:
+                Prefer to reconfirm doctor availability or book over a phone call?
               </p>
-              <a
-                href={`tel:${clinicConfig.contact.phone}`}
-                className="inline-flex items-center gap-2 mt-2 text-sm font-bold text-teal-900 hover:text-teal-700"
-              >
-                <Phone className="w-4 h-4 text-teal-700" />
-                <span>{clinicConfig.contact.phoneFormatted}</span>
-              </a>
-              <p className="text-[11px] text-slate-500 mt-1">
-                Operating Hours: {clinicConfig.hours.morningShift} & {clinicConfig.hours.eveningShift}
+              <div className="mt-2 space-y-1">
+                <a
+                  href={`tel:${clinicConfig.contact.landline}`}
+                  className="inline-flex items-center gap-2 text-sm font-bold text-teal-900 hover:text-teal-700 block"
+                >
+                  <Phone className="w-4 h-4 text-teal-700" />
+                  <span>Clinic Landline: {clinicConfig.contact.landlineFormatted}</span>
+                </a>
+                <a
+                  href={`tel:${clinicConfig.contact.phone}`}
+                  className="inline-flex items-center gap-2 text-xs font-semibold text-slate-700 hover:text-slate-900 block"
+                >
+                  <Phone className="w-3.5 h-3.5 text-teal-600" />
+                  <span>Mobile: {clinicConfig.contact.phoneFormatted}</span>
+                </a>
+              </div>
+              <p className="text-[11px] text-slate-500 mt-2">
+                Outpatient Shifts: {clinicConfig.hours.morningShift} & {clinicConfig.hours.eveningShift}
               </p>
             </div>
           </div>
@@ -460,9 +469,9 @@ export function AppointmentSection() {
                           {...register("preferredTimeSlot")}
                           className="w-full pl-9 pr-3 py-2.5 rounded-xl border border-slate-200 text-sm text-slate-900 bg-white focus:outline-none focus:border-teal-700 focus:ring-2 focus:ring-teal-100"
                         >
-                          <option value="morning">Morning (10:00 AM – 01:00 PM)</option>
-                          <option value="afternoon">Afternoon (01:00 PM – 04:00 PM)</option>
-                          <option value="evening">Evening (04:30 PM – 08:00 PM)</option>
+                          <option value="morning">Morning Shift (10:00 AM – 02:00 PM)</option>
+                          <option value="afternoon">Afternoon (02:00 PM – 04:30 PM)</option>
+                          <option value="evening">Evening Shift (05:00 PM – 07:30 PM)</option>
                         </select>
                       </div>
                     </div>

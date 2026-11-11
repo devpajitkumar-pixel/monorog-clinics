@@ -2,45 +2,45 @@ import { FaqItem } from "@/types";
 
 export const faqData: FaqItem[] = [
   {
-    question: "Do I need a doctor's referral to schedule a consultation at Manorog Clinic?",
+    question: "Do I need a doctor's referral to consult Dr. Ravinder Mohan Sharma?",
     answer:
-      "No, a prior referral is not mandatory. You may directly schedule an appointment via our website WhatsApp booking link or by contacting our reception. If you have previous medical records or prescriptions, bringing them along is helpful.",
+      "No prior referral is required. You can schedule a consultation through our website booking form or by directly calling the clinic reception at 0183-2423856. If you have past prescriptions or diagnostic reports, bringing them along helps Dr. Sharma evaluate your medical timeline.",
     category: "Appointments",
   },
   {
-    question: "Are consultations at Manorog Clinic completely confidential?",
+    question: "Where is Manorog Clinic located on Majitha Road in Amritsar?",
     answer:
-      "Strict confidentiality is a core ethical pillar of our clinic. All patient discussions, diagnostic impressions, and treatment records are held in the strictest medical confidence adhering to Indian medical ethics and legal standards.",
+      "The clinic is located at Bhandari Niwas on Majitha Road, Bhawani Nagar / Guru Gobind Singh Nagar in Amritsar (Postal Code 143001). Prominent local landmarks include opposite Canara Bank and opposite Sharma Sanitary Store.",
+    category: "Location & Logistics",
+  },
+  {
+    question: "Are psychiatric consultations held in strict medical confidentiality?",
+    answer:
+      "Yes, absolute discretion and confidentiality are upheld for every patient. Personal histories, diagnoses, and treatment plans are managed strictly under Indian medical ethics and legal standards. No details are shared without your permission.",
     category: "Privacy & Ethics",
   },
   {
-    question: "How long does the initial consultation typically take?",
+    question: "Are prescribed medicines available directly at the clinic?",
     answer:
-      "An initial consultation typically lasts between 45 to 60 minutes. We believe in unhurried care to thoroughly listen to your concerns, review relevant medical history, and discuss collaborative treatment options.",
-    category: "Consultation Process",
+      "Yes. Manorog Clinic features an on-premises medical dispensary and pharmacy. Patients can conveniently obtain authentic psychiatric and general medicines prescribed by Dr. Sharma immediately after consultation.",
+    category: "Pharmacy & Medicines",
   },
   {
-    question: "Can family members accompany the patient during the visit?",
+    question: "What are the outpatient consultation shifts?",
     answer:
-      "Yes, family support is welcomed and often valuable. However, the patient's autonomy and comfort are paramount; one-on-one private time with the physician is always provided.",
-    category: "Consultation Process",
+      "Regular consultations run Monday to Saturday during two daily shifts: Morning (10:00 AM – 02:00 PM) and Evening (05:00 PM – 07:30 PM). Sunday hours are typically 11:00 AM – 02:00 PM. We advise calling 0183-2423856 before visiting to verify the doctor's current schedule.",
+    category: "Timings & Shifts",
   },
   {
-    question: "How does the WhatsApp appointment booking request work?",
+    question: "How does the WhatsApp appointment coordination work?",
     answer:
-      "When you fill out the booking form on our website, it formats your request into a concise message and opens your WhatsApp. Once you send it to our clinic reception, our staff verifies slot availability and sends you a confirmation.",
+      "When you submit the appointment request form, our system compiles your details into a concise, polite text and opens WhatsApp. Once sent, clinic staff verifies current slot availability and replies to confirm your timing.",
     category: "Appointments",
   },
   {
-    question: "What should I do in case of an acute psychiatric or medical emergency?",
+    question: "What should patients do in an acute psychiatric or physical emergency?",
     answer:
-      "Manorog Clinic operates on an outpatient basis. In the event of an acute emergency, self-harm crisis, or severe medical instability, please immediately call national emergency services (112 / 108) or visit the emergency department of the nearest hospital.",
+      "Manorog Clinic provides scheduled outpatient clinical consultations. If someone is experiencing acute suicidal ideation, severe disorientation, or medical emergencies, please immediately contact national emergency helplines (112 / 108) or proceed to the nearest hospital casualty emergency room.",
     category: "Emergency & Safety",
-  },
-  {
-    question: "Where is the clinic located in Amritsar, and is parking available?",
-    answer:
-      "The clinic is situated centrally in Amritsar, Punjab, near major transit routes in the Civil Lines / Court Road area. Dedicated street-side and nearby parking is accessible for visitors.",
-    category: "Location & Logistics",
   },
 ];

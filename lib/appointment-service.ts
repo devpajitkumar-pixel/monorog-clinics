@@ -5,11 +5,11 @@ import { clinicConfig } from "@/data/clinic";
 export function formatTimeSlot(slot: string): string {
   switch (slot) {
     case "morning":
-      return "Morning (10:00 AM – 01:00 PM)";
+      return "Morning (10:00 AM – 02:00 PM)";
     case "afternoon":
-      return "Afternoon (01:00 PM – 04:00 PM)";
+      return "Afternoon (02:00 PM – 04:30 PM)";
     case "evening":
-      return "Evening (04:30 PM – 07:30 PM)";
+      return "Evening (05:00 PM – 07:30 PM)";
     default:
       return slot;
   }
@@ -104,3 +104,4 @@ export async function processAppointmentRequest(
     message: "Appointment request generated. Connecting to WhatsApp...",
   };
 }
+

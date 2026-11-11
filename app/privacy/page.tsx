@@ -87,10 +87,10 @@ export default function PrivacyPage() {
             If you have questions regarding our privacy practices or wish to update your contact details on file, please contact the clinic administrator at:
           </p>
           <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs space-y-1">
-            <p><strong>Manorog Clinic Reception</strong></p>
-            <p>{clinicConfig.address.street}, {clinicConfig.address.city}, Punjab</p>
+            <p><strong>Manorog Clinic Reception</strong> (Dr. Ravinder Mohan Sharma)</p>
+            <p>{clinicConfig.address.building}, {clinicConfig.address.street}, {clinicConfig.address.city}, Punjab</p>
+            <p>Landline: {clinicConfig.contact.landlineFormatted} | Mobile: {clinicConfig.contact.phoneFormatted}</p>
             <p>Email: {clinicConfig.contact.email}</p>
-            <p>Telephone: {clinicConfig.contact.phoneFormatted}</p>
           </div>
         </div>
       </div>

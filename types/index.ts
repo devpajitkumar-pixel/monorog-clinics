@@ -1,11 +1,12 @@
 export interface ClinicAddress {
   street: string;
+  building?: string;
   locality: string;
   city: string;
   state: string;
   postalCode: string;
   country: string;
-  landmark?: string;
+  landmark: string;
 }
 
 export interface ClinicGeo {
@@ -14,6 +15,8 @@ export interface ClinicGeo {
 }
 
 export interface ClinicContact {
+  landline: string;
+  landlineFormatted: string;
   phone: string;
   phoneFormatted: string;
   whatsapp: string;
@@ -26,7 +29,7 @@ export interface ClinicHours {
   morningShift: string;
   eveningShift: string;
   sunday: string;
-  note?: string;
+  note: string;
 }
 
 export interface DoctorProfile {
@@ -34,8 +37,9 @@ export interface DoctorProfile {
   title: string;
   role: string;
   qualifications: string[];
+  associations: string[];
   specialty: string;
-  experienceYears: number;
+  experienceYears?: number;
   registrationNumber?: string;
   bio: string[];
   focusAreas: string[];
@@ -62,6 +66,14 @@ export interface FaqItem {
   category?: string;
 }
 
+export interface ClinicRating {
+  score: number;
+  maxScore: number;
+  reviewCount: number;
+  source: string;
+  highlights: string[];
+}
+
 export interface ClinicConfig {
   name: string;
   tagline: string;
@@ -71,8 +83,11 @@ export interface ClinicConfig {
   geo: ClinicGeo;
   contact: ClinicContact;
   hours: ClinicHours;
+  ratings: ClinicRating;
+  facilities: string[];
   maps: {
     googleMapsUrl: string;
+    directionsUrl: string;
     embedUrl: string;
   };
   doctor: DoctorProfile;

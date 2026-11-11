@@ -3,19 +3,40 @@ import { clinicConfig } from "@/data/clinic";
 export function MedicalClinicJsonLd() {
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "MedicalClinic",
+    "@type": ["MedicalClinic", "Pharmacy"],
     name: clinicConfig.name,
     description: clinicConfig.description,
     url: "https://manorogclinic.com",
-    telephone: clinicConfig.contact.phone,
+    telephone: clinicConfig.contact.landline,
     medicalSpecialty: [
       "Psychiatric",
       "CommunityHealth",
-      "PublicHealth",
+      "PrimaryCare",
     ],
+    physician: {
+      "@type": "Physician",
+      name: clinicConfig.doctor.name,
+      jobTitle: clinicConfig.doctor.title,
+      memberOf: [
+        {
+          "@type": "MedicalOrganization",
+          name: "Indian Psychiatric Society",
+        },
+        {
+          "@type": "MedicalOrganization",
+          name: "Indian Medical Association Amritsar",
+        },
+      ],
+    },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: clinicConfig.ratings.score.toString(),
+      bestRating: "5",
+      reviewCount: clinicConfig.ratings.reviewCount.toString(),
+    },
     address: {
       "@type": "PostalAddress",
-      streetAddress: clinicConfig.address.street,
+      streetAddress: `${clinicConfig.address.building}, ${clinicConfig.address.street}`,
       addressLocality: clinicConfig.address.locality,
       addressRegion: clinicConfig.address.state,
       postalCode: clinicConfig.address.postalCode,
@@ -51,15 +72,21 @@ export function MedicalClinicJsonLd() {
           "Friday",
           "Saturday",
         ],
-        opens: "16:30",
-        closes: "20:00",
+        opens: "17:00",
+        closes: "19:30",
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Sunday"],
+        opens: "11:00",
+        closes: "14:00",
       },
     ],
     isAccessibleForFree: false,
     availableService: [
       {
         "@type": "MedicalTherapy",
-        name: "Stress & Anxiety Management Consultation",
+        name: "Clinical Psychiatric Consultation & Checkup",
       },
       {
         "@type": "MedicalTherapy",
@@ -67,11 +94,15 @@ export function MedicalClinicJsonLd() {
       },
       {
         "@type": "MedicalTherapy",
-        name: "Sleep and Insomnia Consultation",
+        name: "Anxiety and Panic Management",
       },
       {
         "@type": "MedicalTherapy",
-        name: "Addiction Recovery Support",
+        name: "Sleep and Insomnia Consultation",
+      },
+      {
+        "@type": "MedicalBusiness",
+        name: "On-Premises Pharmacy & Medicine Dispensary",
       },
     ],
   };
