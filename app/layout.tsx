@@ -5,6 +5,10 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { FloatingWhatsApp } from "@/components/layout/FloatingWhatsApp";
 import { MedicalClinicJsonLd } from "@/components/layout/JsonLd";
+import {
+  ConceptDisclaimerModal,
+  DisclaimerBanner,
+} from "@/components/layout/ConceptDisclaimerModal";
 import { clinicConfig } from "@/data/clinic";
 
 const geistSans = Geist({
@@ -95,10 +99,12 @@ export default function RootLayout({
         <MedicalClinicJsonLd />
       </head>
       <body className="min-h-full flex flex-col bg-slate-50 text-slate-800 selection:bg-teal-100 selection:text-teal-900">
+        <DisclaimerBanner />
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
         <FloatingWhatsApp />
+        <ConceptDisclaimerModal />
       </body>
     </html>
   );

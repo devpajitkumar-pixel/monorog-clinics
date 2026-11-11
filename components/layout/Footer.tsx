@@ -183,6 +183,9 @@ export function Footer() {
           <p className="leading-relaxed">
             <strong className="text-slate-300">Medical Disclaimer:</strong> {clinicConfig.disclaimer}
           </p>
+          <div className="p-3.5 rounded-xl bg-slate-900 border border-amber-500/40 text-amber-300 text-xs leading-relaxed">
+            <strong>Demonstration Notice:</strong> Independent website concept demonstration created for presentation purposes only. This website is not affiliated with, operated by, or endorsed by Manorog Clinic or its medical practitioners. No appointments are being accepted through this demonstration.
+          </div>
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-slate-400 pt-2 border-t border-slate-900">
             <p>
               &copy; {currentYear} {clinicConfig.name}, Amritsar. Dr. Ravinder Mohan Sharma (IPS / IMA Member). All rights reserved.

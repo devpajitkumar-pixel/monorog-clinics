@@ -518,6 +518,14 @@ export function AppointmentSection() {
                     </div>
                   )}
 
+                  {/* Visible Concept Demonstration Notice */}
+                  <div className="p-3.5 bg-amber-50/90 rounded-xl border border-amber-300 text-[11px] text-amber-950 flex items-start gap-2.5">
+                    <AlertCircle className="w-4 h-4 text-amber-700 shrink-0 mt-0.5" />
+                    <span className="leading-relaxed">
+                      <strong>Demonstration Notice:</strong> Independent website concept demonstration created for presentation purposes only. This website is not affiliated with, operated by, or endorsed by Manorog Clinic or its medical practitioners. No appointments are being accepted through this demonstration.
+                    </span>
+                  </div>
+
                   {/* Submit Button */}
                   <button
                     type="submit"
