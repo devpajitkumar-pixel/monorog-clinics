@@ -6,7 +6,7 @@ export function MedicalClinicJsonLd() {
     "@type": ["MedicalClinic", "Pharmacy"],
     name: clinicConfig.name,
     description: clinicConfig.description,
-    url: "https://manorogclinic.com",
+    url: "https://monorogclinics.theajitkumar.online",
     telephone: clinicConfig.contact.landline,
     medicalSpecialty: [
       "Psychiatric",

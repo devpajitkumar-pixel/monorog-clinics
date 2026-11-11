@@ -6,7 +6,7 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://manorogclinic.com/sitemap.xml",
+    sitemap: "https://monorogclinics.theajitkumar.online/sitemap.xml",
   };
 }
 

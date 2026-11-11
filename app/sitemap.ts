@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import { servicesData } from "@/data/services";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://manorogclinic.com";
+  const baseUrl = "https://monorogclinics.theajitkumar.online";
   const lastModified = new Date("2026-11-11");
 
   const staticRoutes: MetadataRoute.Sitemap = [

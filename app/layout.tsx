@@ -26,7 +26,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://manorogclinic.com"),
+  metadataBase: new URL("https://monorogclinics.theajitkumar.online"),
   title: {
     default: `${clinicConfig.name} | Dr. Ravinder Mohan Sharma | Majitha Road, Amritsar`,
     template: `%s | ${clinicConfig.name} Amritsar`,
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: `${clinicConfig.name} | Premier Medical Clinic in Amritsar`,
     description: clinicConfig.description,
-    url: "https://manorogclinic.com",
+    url: "https://monorogclinics.theajitkumar.online",
     siteName: clinicConfig.name,
     locale: "en_IN",
     type: "website",
