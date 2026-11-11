@@ -23,9 +23,9 @@ export const clinicConfig: ClinicConfig = {
   contact: {
     landline: "01832423856",
     landlineFormatted: "0183-2423856",
-    phone: "+919316526212",
-    phoneFormatted: "+91 93165 26212",
-    whatsapp: "+919316526212",
+    phone: "+919316526202",
+    phoneFormatted: "+91 93165 26202",
+    whatsapp: "+919316526202",
     email: "drrmsharma@rediffmail.com",
     emergencyHelpline: "112 / 108 (National Emergency Services)",
   },
